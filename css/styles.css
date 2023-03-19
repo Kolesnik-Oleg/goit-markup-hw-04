@@ -227,6 +227,9 @@ address {
 .section-examples {
     padding-top: 0;
 }
+.team.section {
+    background-color: var(--background-team-color);
+}
 .our-team {
     display: flex;
 }
@@ -234,10 +237,10 @@ address {
     margin-right: 24px;
 }
 .team.social-networks {
-    display: inline-flex;
+    display: flex;
     gap: 24px;
     padding: 0;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 .social-link {
     width: 40px;
@@ -247,6 +250,10 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.social-link:hover,
+.social-link:hover:focus {
+    background-color: var(--accent-portfolio-color);
 }
 .social-icon {
     fill: var(--background-team-color);
@@ -272,15 +279,21 @@ address {
     letter-spacing: 0.02em;
 }
 .info-team {
-    width: 232px;
     padding: 32px 16px;
 }
 .customer-item {
     display: flex;
     gap: 24px;
 }
-.customer-link {
+.customers-link {
+    width: 100%;
+    height: 100%;
     display: block;
+    border:1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
 .customers-icon {
     fill:var(--icons-color);
@@ -288,22 +301,15 @@ address {
 .customers-list {
     width: 168px;
     height: 88px;
-    border:1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .customers-icon {
     width: 104px;
     height: 56px;
 }
-.customers-list:hover,
-.customers-list:focus {
-    border: 1px solid var(--hover-button);
-}
 .customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon{
+.customers-link:focus .customers-icon {
     fill:var(--hover-button);
+    border: 1px solid var(--hover-button);
 }
 .footer {
     padding-top: 100px;
@@ -312,6 +318,7 @@ address {
 }
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 .footer-networks {
     margin-left: 120px;
@@ -421,8 +428,8 @@ address {
     margin-right: 24px;
     margin-bottom: 48px;
 }
-.examples-item:hover,
-.examples-item:focus {
+.examples-link:hover,
+.examples-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .examples-item:nth-child(3n) {
