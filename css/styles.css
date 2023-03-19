@@ -222,7 +222,8 @@ address {
     min-width: 360px;
 }
 .work-examples > .item:not(:last-child) {
-    margin-right: 24px;
+    margin-right: 22px;
+
 }
 .section-examples {
     padding-top: 0;
